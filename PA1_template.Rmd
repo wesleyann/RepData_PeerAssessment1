@@ -94,6 +94,9 @@ The number of NA's is  `r nas`.
 
 2. Devise a strategy for filling in all of the missing values in the dataset. The strategy does not need to be sophisticated. For example, you could use the mean/median for that day, or the mean for that 5-minute interval, etc
 
+Strategy: For filling in the missing values, we match Intervall IDs and use the mean steps across all days for a given interval to populate the NAs in the newly created clean dataframe: 
+
+
 ```{r}
 actdata.clean <- cbind(actdata, actdata.stepsInterval[,2])
 names(actdata.clean)[4] <- c("mean")
