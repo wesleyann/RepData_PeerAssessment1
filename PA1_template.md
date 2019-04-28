@@ -75,7 +75,7 @@ hist(actdata.stepsDay$x,
      xlab="Total Steps taken")
 ```
 
-![](PA1_template_files/figure-markdown_github/unnamed-chunk-5-1.png)
+![](figures/unnamed-chunk-5-1.png)
 
 What is the average daily activity pattern?
 -------------------------------------------
@@ -97,7 +97,7 @@ plot( x=actdata.stepsInterval[,1],
       xlab="Interval (in minutes)")
 ```
 
-![](PA1_template_files/figure-markdown_github/unnamed-chunk-6-1.png)
+![](figures/unnamed-chunk-6-1.png)
 
 1.  Which 5-minute interval, on average across all the days in the
     dataset, contains the maximum number of steps?
@@ -159,7 +159,7 @@ hist(actdata.clean.stepsDay$x,
      xlab="Total number of steps")
 ```
 
-![](PA1_template_files/figure-markdown_github/unnamed-chunk-11-1.png)
+![](figures/unnamed-chunk-11-1.png)
 
 There are no big differences between the mean and median of the two
 datasets. The impact of imputing the missing values is to have more
@@ -195,4 +195,4 @@ plot( x=actdata.weekday.steps[,1],
       xlab="Interval ID")
 ```
 
-![](PA1_template_files/figure-markdown_github/unnamed-chunk-13-1.png)
+![](figures/unnamed-chunk-13-1.png)
